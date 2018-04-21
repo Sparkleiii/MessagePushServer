@@ -124,7 +124,8 @@ public class NotificationController extends MultiActionController {
     		os.close();
     		is.close();
 //    		String serverName = request.getServerName();
-    		String serverName = "192.168.1.102";
+//    		String serverName = "192.168.1.103";
+			String serverName = "172.25.69.146";
     		int serverPort = request.getServerPort();
     		String url = "http://"+serverName+":"+serverPort+"/upload/"+fileName;
     		System.out.println("*******************");

@@ -6,7 +6,7 @@ import org.androidpn.server.model.Login;
 
 
 public interface LoginDao {
-	
+	public Login findByid(long id);
 	public void saveUser(Login user);
 	public void deleteUser(Login user);
 	public void updateUser(Login user);

@@ -18,48 +18,48 @@
 <tr>
 	<td width="20%">To:</td>
 	<td width="80%">
-		<input type="radio" name="broadcast" value="0" checked="checked" />  All (Broadcast) 
-        <input type="radio" name="broadcast" value="1" /> By Username
-        <input type="radio" name="broadcast" value="2" /> By Alias
-        <input type="radio" name="broadcast" value="3" /> By Tag
+		<input type="radio" name="broadcast" value="0" checked="checked" />  所有人
+        <input type="radio" name="broadcast" value="1" /> 通过客户端编号
+        <input type="radio" name="broadcast" value="2" /> 通过用户名
+        <input type="radio" name="broadcast" value="3" /> 通过兴趣标签
 	</td>
 </tr>
 <tr id="trUsername" style="display:none;">
-	<td>Username:</td>
+	<td>客户端编号:</td>
 	<td><input type="text" id="username" name="username" value="" style="width:380px;" /></td>
 </tr>
 <tr id="trAlias" style="display:none;">
-	<td>Alias:</td>
+	<td>用户名:</td>
 	<td><input type="text" id="alias" name="alias" value="" style="width:380px;" /></td>
 </tr>
 <tr id="trTag" style="display:none;">
-	<td>Tag:</td>
+	<td>兴趣标签:</td>
 	<td><input type="text" id="tag" name="tag" value="" style="width:380px;" /></td>
 </tr>
 <tr>
-	<td>Title:</td>
+	<td>标题:</td>
 	<td><input type="text" id="title" name="title" value="title test" style="width:380px;" /></td>
 </tr>
 <tr>
-	<td>Message:</td>
+	<td>内容:</td>
 	<td><textarea id="message" name="message" style="width:380px; height:80px;" >Message test</textarea></td>
 </tr>
 <tr>
-	<td>URI:</td>
+	<td>链接地址:</td>
 	<td><input type="text" id="uri" name="uri" value="" style="width:380px;" />
 	    <br/><span style="font-size:0.8em">例: http://www.dokdocorea.com, geo:37.24,131.86, tel:111-222-3333</span>
 	</td>
 </tr>
 <tr>
-	<td>Image:</td>
+	<td>图片:</td>
 	<td><input type="file" id="image" name="image" value="" style="width:380px;" />
-	    <br/><span style="font-size:0.8em" style="color:red"">Only image is valid</span>
+	    <br/><span style="font-size:0.8em" style="color:red">只允许图片</span>
 	</td>
 </tr>
 
 <tr>
 	<td>&nbsp;</td>
-	<td><input type="submit" value="Submit" /></td>
+	<td><input type="submit" value="提交" /></td>
 </tr>
 </table> 
 </form>

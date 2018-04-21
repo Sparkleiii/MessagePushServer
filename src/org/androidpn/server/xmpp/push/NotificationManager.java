@@ -1,16 +1,13 @@
 
 package org.androidpn.server.xmpp.push;
 
-import java.util.List;
-import java.util.Random;
-import java.util.Set;
+import java.util.*;
 
+import org.androidpn.server.model.Login;
 import org.androidpn.server.model.Notification;
 import org.androidpn.server.model.User;
-import org.androidpn.server.service.NotificationService;
-import org.androidpn.server.service.ServiceLocator;
-import org.androidpn.server.service.UserNotFoundException;
-import org.androidpn.server.service.UserService;
+import org.androidpn.server.model.UserTags;
+import org.androidpn.server.service.*;
 import org.androidpn.server.xmpp.session.ClientSession;
 import org.androidpn.server.xmpp.session.SessionManager;
 import org.apache.commons.logging.Log;
@@ -30,8 +27,12 @@ public class NotificationManager {
     private SessionManager sessionManager;
     
     private NotificationService notificationService;
+
+    private UserTagsService userTagsService;
     
     private UserService userService;
+
+    private LoginService loginService;
 
     /**
      * 构造体
@@ -40,6 +41,8 @@ public class NotificationManager {
         sessionManager = SessionManager.getInstance();
         notificationService = ServiceLocator.getNotificationService();
         userService = ServiceLocator.getUserService();
+        userTagsService = ServiceLocator.getUserTagsService();
+        loginService = ServiceLocator.getLoginService();
     }
 
     /**
@@ -107,8 +110,13 @@ public class NotificationManager {
     public void sendNotificationByTag(String apiKey, String tag,
             String title, String message, String uri,String imageurl,boolean shouldSave){
     	log.debug("NotificationManager sendNotificationByTag()...");
-    	Set<String> usernameSet= sessionManager.getUsernamesByTag(tag);
-    	if(usernameSet!=null && !usernameSet.isEmpty()){
+    	List<String> utlist = userTagsService.findByTag(tag);
+    	Set<String> usernameSet = new HashSet<String>();
+    	for(String account:utlist){
+    	    Login login = loginService.getUserByAccount(account);
+    	    usernameSet.add(login.getUsername());
+        }
+    	if(utlist!=null && !utlist.isEmpty()){
     		for(String username:usernameSet){
     			sendNotifcationToUser(apiKey, username, title, message, uri,imageurl, shouldSave);
     		}

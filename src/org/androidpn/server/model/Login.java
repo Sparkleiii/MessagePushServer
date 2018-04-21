@@ -1,16 +1,16 @@
 package org.androidpn.server.model;
 
 import java.util.Date;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "login")
 public class Login {
 	@Id
-	@Column(name = "account", nullable = false, length = 64, unique = true)
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private long id;
+
+	@Column(name ="account", nullable = false, length = 64, unique = true)
 	private String account;
 	
 	@Column(name = "password", nullable = false, length = 64)
@@ -21,6 +21,14 @@ public class Login {
 	
 	@Column(name = "created_date", updatable = false)
     private Date createdDate = new Date();
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
 
 	public String getAccount() {
 		return account;

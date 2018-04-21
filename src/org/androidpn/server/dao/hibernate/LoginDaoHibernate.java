@@ -9,6 +9,11 @@ import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
 public class LoginDaoHibernate extends HibernateDaoSupport implements LoginDao{
 
+	@Override
+	public Login findByid(long id) {
+		return (Login) getHibernateTemplate().get(Login.class,id);
+	}
+
 	public void saveUser(Login user) {
 		getHibernateTemplate().saveOrUpdate(user);
 		getHibernateTemplate().flush();

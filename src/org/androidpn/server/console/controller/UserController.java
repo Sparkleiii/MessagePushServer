@@ -3,6 +3,9 @@ package org.androidpn.server.console.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -48,9 +51,36 @@ public class UserController extends MultiActionController {
         return mav;
     }
     
+
+    public void register(HttpServletRequest request,HttpServletResponse response) throws  ServletException,IOException{
+        request.setCharacterEncoding("UTF-8");
+        String jsonData = "error";
+        String account = request.getParameter("username");
+        String password = request.getParameter("password");
+        String clientId = request.getParameter("clientId");
+        //若该用户名已存在
+        if(!loginService.exists(account)){
+            Login exist = loginService.getUserByClientId(clientId);
+            if(exist!=null){
+                exist.setUsername("");
+                loginService.updateUser(exist);
+            }
+            Login login = new Login();
+            login.setUsername(clientId);
+            login.setAccount(account);
+            login.setPassword(password);
+            login.setCreatedDate(new Date());
+            loginService.saveUser(login);
+            System.out.println("注册成功");
+            jsonData = "success";
+        }else {
+            jsonData = "exist";
+            System.out.println("用户名已存在");
+        }
+        sendMessage(jsonData,response);
+    }
     
-    
-    public String login(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void login(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     	request.setCharacterEncoding("UTF-8");
     	String jsonData =  "error";
     	String account = request.getParameter("username");
@@ -74,12 +104,17 @@ public class UserController extends MultiActionController {
     			}
     		}
     	}
-    	PrintWriter printWriter = response.getWriter();
+        sendMessage(jsonData,response);
+    }
+
+    public void sendMessage(String jsonData,HttpServletResponse response) throws IOException {
+        PrintWriter printWriter = response.getWriter();
         printWriter.print(jsonData);
         printWriter.flush();
         printWriter.close();
-    	return null;
     }
+
+
     
     
 

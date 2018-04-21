@@ -11,6 +11,10 @@ public class ServiceLocator {
     
     public static String LOGIN_SERVICE = "loginService";
 
+    public static String TAGS_SERVICE = "tagsService";
+
+    public static String USERTAGS_SERVICE  = "userTagsService";
+
     /**
      * Generic method to obtain a service object for a given name. 
      * 
@@ -31,6 +35,14 @@ public class ServiceLocator {
     
     public static NotificationService getNotificationService(){
     	return (NotificationService)XmppServer.getInstance().getBean(NOTIFICATION_SERVICE);
+    }
+
+    public static TagsService getTagsService(){
+        return (TagsService) XmppServer.getInstance().getBean(TAGS_SERVICE);
+    }
+
+    public static UserTagsService getUserTagsService(){
+        return (UserTagsService) XmppServer.getInstance().getBean(USERTAGS_SERVICE);
     }
 
 }

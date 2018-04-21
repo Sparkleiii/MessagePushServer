@@ -12,7 +12,7 @@
 
 <body>
 
-<h1>Sessions</h1>
+<h1>请求列表</h1>
 
 <table id="tableList" class="tablesorter" cellspacing="1">
 	<thead>
@@ -25,12 +25,12 @@
 			<th width="15%">Client IP</th>
 			<th width="25%">Created</th>
 			--%>
-			<th>Username</th>
-			<th>Resource</th>
-			<th>Status</th>
-			<th>Presence</th>
-			<th>Client IP</th>
-			<th>Created</th>			
+			<th>客户端编号</th>
+			<th>来源</th>
+			<th>状态</th>
+			<th>在线状态</th>
+			<th>客户端IP</th>
+			<th>创建时间</th>
 		</tr>
 	</thead>
 	<tbody>

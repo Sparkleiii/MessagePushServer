@@ -66,6 +66,12 @@
 	<bean id="loginDao" class="org.androidpn.server.dao.hibernate.LoginDaoHibernate">
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
+	<bean id="tagsDao" class="org.androidpn.server.dao.hibernate.TagsDaoHibernate">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="userTagsDao" class="org.androidpn.server.dao.hibernate.UserTagsDaoHibernate">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
 
 	<!-- =============================================================== -->
 	<!-- Services                                                        -->
@@ -79,6 +85,12 @@
 	</bean>
 	<bean id="loginService" class="org.androidpn.server.service.impl.LoginServiceImpl">
 		<property name="loginDao" ref="loginDao" />
+	</bean>
+	<bean id="tagsService" class="org.androidpn.server.service.impl.TagsServiceImpl">
+		<property name="tagsDao" ref="tagsDao" />
+	</bean>
+	<bean id="userTagsService" class="org.androidpn.server.service.impl.UserTagsServiceImpl">
+		<property name="userTagsDao" ref="userTagsDao" />
 	</bean>
 
 	<!-- =============================================================== -->
@@ -142,10 +154,5 @@
 		<property name="filterChainBuilder" ref="filterChainBuilder" />
 		<property name="reuseAddress" value="true" />
 	</bean>
-	
-	<!--  若客户端在300s内未向服务器发送数据，将客户端设为空闲状态 -->
-	<!--  <bean id="getSessionConfig" factory-bean="ioAcceptor" factory-method="getSessionConfig">
-		<property name="readerIdleTime" value="90"></property>
-	</bean> -->
 
 </beans>
