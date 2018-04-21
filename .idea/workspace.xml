@@ -6,65 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4d06d07-91b5-42dd-9199-514398109dda" name="Default" comment="界面修改&#10;添加IQTagAlias&#10;数据库修改添加表tag user_tag">
-      <change afterPath="$PROJECT_DIR$/src/org/androidpn/server/dao/TagsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/androidpn/server/dao/UserTagsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/androidpn/server/dao/hibernate/TagsDaoHibernate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/androidpn/server/dao/hibernate/UserTagsDaoHibernate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/androidpn/server/model/UserTags.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/androidpn/server/service/TagsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/androidpn/server/service/UserTagsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/androidpn/server/service/impl/TagsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/androidpn/server/service/impl/UserTagsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MessagePushServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MessagePushServer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/notification/form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/notification/form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/session/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/session/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/decorators/default.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/decorators/default.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/includes/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/includes/footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/includes/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/includes/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/console/controller/NotificationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/console/controller/NotificationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/console/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/console/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/dao/LoginDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/dao/LoginDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/dao/hibernate/LoginDaoHibernate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/dao/hibernate/LoginDaoHibernate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/model/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/model/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/service/ServiceLocator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/service/ServiceLocator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/handler/IQSetTagsHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/handler/IQSetTagsHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/push/LoginManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/push/LoginManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/push/NotificationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/push/NotificationManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/spring-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/spring-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/pages/notification/form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/pages/notification/form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/pages/session/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/pages/session/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/decorators/default.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/decorators/default.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/includes/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/includes/footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/includes/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/includes/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MessagePushServer/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MessagePushServer/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/console/controller/NotificationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/console/controller/NotificationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/console/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/console/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/dao/LoginDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/dao/LoginDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/dao/hibernate/LoginDaoHibernate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/dao/hibernate/LoginDaoHibernate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/model/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/model/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/service/ServiceLocator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/service/ServiceLocator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/xmpp/handler/IQSetTagsHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/xmpp/handler/IQSetTagsHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/xmpp/push/LoginManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/xmpp/push/NotificationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/xmpp/push/NotificationManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MessagePushServer/spring-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MessagePushServer/spring-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/spring-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/spring-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/console/controller/NotificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/androidpn/server/console/controller/NotificationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/console/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/androidpn/server/console/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/dao/LoginDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/androidpn/server/dao/LoginDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/dao/hibernate/LoginDaoHibernate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/androidpn/server/dao/hibernate/LoginDaoHibernate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/model/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/androidpn/server/model/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/service/ServiceLocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/androidpn/server/service/ServiceLocator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQSetTagsHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQSetTagsHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/push/LoginManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/push/NotificationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/push/NotificationManager.java" afterDir="false" />
-    </list>
+    <list default="true" id="b4d06d07-91b5-42dd-9199-514398109dda" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -184,7 +126,7 @@
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/console/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
+            <state relative-caret-position="32">
               <caret line="95" column="56" selection-start-line="95" selection-start-column="56" selection-end-line="95" selection-end-column="56" />
             </state>
           </provider>
@@ -584,12 +526,20 @@
       <workItem from="1524187424535" duration="3831000" />
       <workItem from="1524193181191" duration="7686000" />
       <workItem from="1524207874433" duration="7095000" />
-      <workItem from="1524279861429" duration="5097000" />
+      <workItem from="1524279861429" duration="5338000" />
     </task>
+    <task id="LOCAL-00001" summary="界面修改&#10;添加IQTagAlias&#10;数据库修改添加表tag user_tag">
+      <created>1524290542034</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1524290542034</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56434000" />
+    <option name="totallyTimeSpent" value="56675000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -617,12 +567,12 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32956153" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.32956153" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32956153" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.13719943" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4966488" weight="0.15983027" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4966488" visible="true" weight="0.8373409" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32956153" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32956153" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32956153" />
@@ -1093,7 +1043,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/console/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
+        <state relative-caret-position="32">
           <caret line="95" column="56" selection-start-line="95" selection-start-column="56" selection-end-line="95" selection-end-column="56" />
         </state>
       </provider>

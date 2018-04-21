@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="dataSource" uuid="40c16e8e-b2c4-49b2-91cc-692f1edbd217">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/resources/spring-config.xml</remarks>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost/test?useUnicode=true&amp;characterEncoding=utf-8&amp;zeroDateTimeBehavior=convertToNull</jdbc-url>
+      <driver-properties>
+        <property name="autoReconnect" value="true" />
+        <property name="zeroDateTimeBehavior" value="convertToNull" />
+        <property name="tinyInt1isBit" value="false" />
+        <property name="characterEncoding" value="utf8" />
+        <property name="characterSetResults" value="utf8" />
+        <property name="yearIsDateType" value="false" />
+      </driver-properties>
+    </data-source>
+    <data-source source="LOCAL" name="sessionFactory/Hibernate" uuid="e2f8c864-f6c2-42e1-8c21-254e057254d8">
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/resources/spring-config.xml</remarks>
+      <jdbc-driver>${jdbc.driverClassName}</jdbc-driver>
+      <jdbc-url>${jdbc.url}</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="WebRoot:WEB-INF:classes:hibernate.cfg.xml/Hibernate" uuid="322c8d46-9ca4-4dc4-9015-93c11a50ab35">
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/WebRoot/WEB-INF/classes/hibernate.cfg.xml</remarks>
+      <jdbc-driver>${jdbc.driverClassName}</jdbc-driver>
+      <jdbc-url>${jdbc.url}</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate.cfg.xml/Hibernate" uuid="99dad384-22b2-41f5-9331-728969f16f83">
+      <imported>true</imported>
+      <configured-by-url>true</configured-by-url>
+      <remarks>$PROJECT_DIR$/resources/hibernate.cfg.xml</remarks>
+      <jdbc-driver>${jdbc.driverClassName}</jdbc-driver>
+      <jdbc-url>${jdbc.url}</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="dataSource" uuid="4e01d2f6-698d-458c-be8d-c62ba6ad1cca">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/WebRoot/WEB-INF/classes/spring-config.xml</remarks>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost/test?useUnicode=true&amp;characterEncoding=utf-8&amp;zeroDateTimeBehavior=convertToNull</jdbc-url>
+      <driver-properties>
+        <property name="autoReconnect" value="true" />
+        <property name="zeroDateTimeBehavior" value="convertToNull" />
+        <property name="tinyInt1isBit" value="false" />
+        <property name="characterEncoding" value="utf8" />
+        <property name="characterSetResults" value="utf8" />
+        <property name="yearIsDateType" value="false" />
+      </driver-properties>
+    </data-source>
+    <data-source source="LOCAL" name="sessionFactory/Hibernate" uuid="bb4bf7e7-0ae2-496d-beb5-58e0e00b2049">
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/WebRoot/WEB-INF/classes/spring-config.xml</remarks>
+      <jdbc-driver>${jdbc.driverClassName}</jdbc-driver>
+      <jdbc-url>${jdbc.url}</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="test@localhost" uuid="554b2576-52b7-4ff7-b43c-22845077e2ed">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/test</jdbc-url>
+      <driver-properties>
+        <property name="autoReconnect" value="true" />
+        <property name="zeroDateTimeBehavior" value="convertToNull" />
+        <property name="tinyInt1isBit" value="false" />
+        <property name="characterEncoding" value="utf8" />
+        <property name="characterSetResults" value="utf8" />
+        <property name="yearIsDateType" value="false" />
+      </driver-properties>
+    </data-source>
+  </component>
+</project>
