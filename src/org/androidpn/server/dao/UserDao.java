@@ -23,11 +23,7 @@ import java.util.List;
 import org.androidpn.server.model.User;
 import org.androidpn.server.service.UserNotFoundException;
 
-/** 
- * User DAO (Data Access Object) interface. 
- *
- * @author Sehwan Noh (devnoh@gmail.com)
- */
+
 public interface UserDao {
 
     public User getUser(Long id);

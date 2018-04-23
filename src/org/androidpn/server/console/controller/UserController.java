@@ -3,6 +3,7 @@ package org.androidpn.server.console.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -12,13 +13,14 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.google.gson.Gson;
+import net.sf.json.JSONArray;
 import org.androidpn.server.model.Login;
+import org.androidpn.server.model.NotInformation;
 import org.androidpn.server.model.User;
-import org.androidpn.server.service.LoginService;
-import org.androidpn.server.service.ServiceLocator;
-import org.androidpn.server.service.UserNotFoundException;
-import org.androidpn.server.service.UserService;
+import org.androidpn.server.service.*;
 import org.androidpn.server.xmpp.presence.PresenceManager;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.multiaction.MultiActionController;
 
@@ -26,10 +28,12 @@ public class UserController extends MultiActionController {
 
     private UserService userService;
     private LoginService loginService;
+    private NotInformationService notInformationService;
 
     public UserController() {
         userService = ServiceLocator.getUserService();
         loginService = ServiceLocator.getLoginService();
+        notInformationService = ServiceLocator.getNotInformationService();
     }
 
     public ModelAndView list(HttpServletRequest request,
@@ -107,15 +111,40 @@ public class UserController extends MultiActionController {
         sendMessage(jsonData,response);
     }
 
-    public void sendMessage(String jsonData,HttpServletResponse response) throws IOException {
+    public void delNotInformation(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        String jsonData = "error";
+        request.setCharacterEncoding("UTF-8");
+
+        sendMessage(jsonData,response);
+    }
+
+    public void getNotInformation(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String jsonData = "error";
+        request.setCharacterEncoding("UTF-8");
+        List<NotInformation> nlist = notInformationService.findAll();
+        Gson gson = new Gson();
+        jsonData = gson.toJson(nlist);
+        System.out.println(jsonData);
+        sendMessage(jsonData,response);
+    }
+
+    //根据类型查询返回消息到客户端
+    public void getNotInformationByType(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String jsonData = "error";
+        request.setCharacterEncoding("UTF-8");
+        String type = request.getParameter("type");
+        List<NotInformation> nlist = notInformationService.findByType(type);
+        Gson gson = new Gson();
+        jsonData = gson.toJson(nlist);
+        System.out.println(jsonData);
+        sendMessage(jsonData,response);
+    }
+
+    public void sendMessage(Object jsonData,HttpServletResponse response) throws IOException {
         PrintWriter printWriter = response.getWriter();
         printWriter.print(jsonData);
         printWriter.flush();
         printWriter.close();
     }
-
-
-    
-    
 
 }

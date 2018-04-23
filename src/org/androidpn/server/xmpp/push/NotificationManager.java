@@ -110,11 +110,16 @@ public class NotificationManager {
     public void sendNotificationByTag(String apiKey, String tag,
             String title, String message, String uri,String imageurl,boolean shouldSave){
     	log.debug("NotificationManager sendNotificationByTag()...");
-    	List<String> utlist = userTagsService.findByTag(tag);
-    	Set<String> usernameSet = new HashSet<String>();
-    	for(String account:utlist){
-    	    Login login = loginService.getUserByAccount(account);
-    	    usernameSet.add(login.getUsername());
+        String[] tagsArray = tag.split(",");
+        List<String> utlist = null;
+        Set<String> usernameSet = null;
+        for(String tags:tagsArray){
+            utlist= userTagsService.findByTag(tags);
+            usernameSet = new HashSet<String>();
+            for(String account:utlist){
+                Login login = loginService.getUserByAccount(account);
+                usernameSet.add(login.getUsername());
+            }
         }
     	if(utlist!=null && !utlist.isEmpty()){
     		for(String username:usernameSet){

@@ -13,4 +13,5 @@ public interface UserTagsDao {
 	public List<String> findByTag(String tag);
 	public List<UserTags> getAllUserTags();
 	public void saveUsersTags(UserTags userTags);
+	public void deleteUserByAccount(String account);
 }

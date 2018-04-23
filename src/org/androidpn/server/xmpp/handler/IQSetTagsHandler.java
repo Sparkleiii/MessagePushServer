@@ -14,6 +14,7 @@ import org.dom4j.Element;
 import org.mortbay.log.Log;
 
 import java.io.UnsupportedEncodingException;
+import java.util.List;
 
 public class IQSetTagsHandler extends IQHandler {
 	private static final String NAMESPACE = "androidpn:iq:settags";
@@ -45,7 +46,9 @@ public class IQSetTagsHandler extends IQHandler {
 	        		String tagsStr = element.elementText("tags");
 	        		System.out.println("username"+username);
 	        		String[] tagsArray = tagsStr.split(",");
-					UserTags userTags = new UserTags();
+	        		userTagsService.deleteUserByAccount(username);
+					log.debug("Delete old Tag Successfully!!!!!!!!");
+	        		UserTags userTags = new UserTags();
 					userTags.setAccount(username);
 	        		if(tagsArray!=null && tagsArray.length>0){
 	        			for(String tag:tagsArray){
@@ -61,6 +64,8 @@ public class IQSetTagsHandler extends IQHandler {
 								tags.setTag(tag);
 								tagsService.saveTags(tags);
 							}
+							//若userTags已存在，则不再添加
+							//删除之前添加的标签
 							userTags.setTag(tag);
 							System.out.println(userTagsService);
 							System.out.println("account="+userTags.getAccount());

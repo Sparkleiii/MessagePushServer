@@ -72,6 +72,9 @@
 	<bean id="userTagsDao" class="org.androidpn.server.dao.hibernate.UserTagsDaoHibernate">
 		<property name="sessionFactory" ref="sessionFactory"></property>
 	</bean>
+	<bean id="notInformationDao" class="org.androidpn.server.dao.hibernate.NotInformationDaoHibernate">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
 
 	<!-- =============================================================== -->
 	<!-- Services                                                        -->
@@ -91,6 +94,9 @@
 	</bean>
 	<bean id="userTagsService" class="org.androidpn.server.service.impl.UserTagsServiceImpl">
 		<property name="userTagsDao" ref="userTagsDao" />
+	</bean>
+	<bean id="notInformationService" class="org.androidpn.server.service.impl.NotInformationServiceImpl">
+		<property name="notInformationDao" ref="notInformationDao" />
 	</bean>
 
 	<!-- =============================================================== -->

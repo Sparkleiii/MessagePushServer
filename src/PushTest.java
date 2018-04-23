@@ -1,7 +1,7 @@
 import org.androidpn.server.xmpp.push.NotificationManager;
 
 
-public class DemoAndroidpn {
+public class PushTest {
 
 	public static void main(String[] args) {
 

@@ -11,19 +11,6 @@
       <user-name>root</user-name>
       <introspection-schemas>*:test</introspection-schemas>
     </data-source>
-    <data-source name="sessionFactory/Hibernate" uuid="e2f8c864-f6c2-42e1-8c21-254e057254d8">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
-      <user-name>${jdbc.username}</user-name>
-    </data-source>
-    <data-source name="WebRoot:WEB-INF:classes:hibernate.cfg.xml/Hibernate" uuid="322c8d46-9ca4-4dc4-9015-93c11a50ab35">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
-      <user-name>${jdbc.username}</user-name>
-    </data-source>
-    <data-source name="hibernate.cfg.xml/Hibernate" uuid="99dad384-22b2-41f5-9331-728969f16f83">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
-      <first-sync>true</first-sync>
-      <user-name>${jdbc.username}</user-name>
-    </data-source>
     <data-source name="dataSource" uuid="4e01d2f6-698d-458c-be8d-c62ba6ad1cca">
       <database-info product="MySQL" version="5.5.28" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )">
         <extra-name-characters>#@</extra-name-characters>
@@ -33,10 +20,6 @@
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
       <introspection-schemas>*:test</introspection-schemas>
-    </data-source>
-    <data-source name="sessionFactory/Hibernate" uuid="bb4bf7e7-0ae2-496d-beb5-58e0e00b2049">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
-      <user-name>${jdbc.username}</user-name>
     </data-source>
     <data-source name="test@localhost" uuid="554b2576-52b7-4ff7-b43c-22845077e2ed">
       <database-info product="MySQL" version="5.5.28" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )">

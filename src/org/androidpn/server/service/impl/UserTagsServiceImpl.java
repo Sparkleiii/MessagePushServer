@@ -37,6 +37,11 @@ public class UserTagsServiceImpl implements UserTagsService {
 	}
 
 	@Override
+	public void deleteUserByAccount(String account) {
+		userTagsDao.deleteUserByAccount(account);
+	}
+
+	@Override
 	public void updateUserTags(UserTags userTags) {
 		userTagsDao.updateUserTags(userTags);
 	}

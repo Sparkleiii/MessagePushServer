@@ -12,6 +12,9 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.androidpn.server.model.NotInformation;
+import org.androidpn.server.service.NotInformationService;
+import org.androidpn.server.service.ServiceLocator;
 import org.androidpn.server.util.Config;
 import org.androidpn.server.xmpp.push.NotificationManager;
 import org.apache.commons.fileupload.FileItem;
@@ -25,9 +28,11 @@ import org.springframework.web.servlet.mvc.multiaction.MultiActionController;
 public class NotificationController extends MultiActionController {
 
     private NotificationManager notificationManager;
+	private NotInformationService notInformationService;
 
     public NotificationController() {
         notificationManager = new NotificationManager();
+		notInformationService = ServiceLocator.getNotInformationService();
     }
 
     public ModelAndView list(HttpServletRequest request,
@@ -37,7 +42,7 @@ public class NotificationController extends MultiActionController {
         mav.setViewName("notification/form");
         return mav;
     }
-    
+
     /**
      * 消息推送Controller
      * 0广播
@@ -51,7 +56,7 @@ public class NotificationController extends MultiActionController {
      */
     public ModelAndView send(HttpServletRequest request,
             HttpServletResponse response) throws Exception {
-    	
+
         String broadcast = null;
         String username = null;
         String alias = null;
@@ -62,8 +67,8 @@ public class NotificationController extends MultiActionController {
         String url = null;
 
         String apiKey = Config.getString("apiKey", "");
-        logger.debug("apiKey=" + apiKey); 
-        
+        logger.debug("apiKey=" + apiKey);
+
         DiskFileItemFactory diskFileItemFactory = new DiskFileItemFactory();
         ServletFileUpload servletFileUpload = new ServletFileUpload(diskFileItemFactory);
         List<FileItem> fileItems = servletFileUpload.parseRequest(request);
@@ -86,7 +91,7 @@ public class NotificationController extends MultiActionController {
 				url =uploadImage(request, item);
 			}
         }
-        
+
 
         if (broadcast.equals("0")) {
             notificationManager.sendBroadcast(apiKey, title, message, uri,url);
@@ -98,12 +103,29 @@ public class NotificationController extends MultiActionController {
         }else if(broadcast.equals("3")){
         	notificationManager.sendNotificationByTag(apiKey, tag, title, message, uri,url, true);
         }
+		NotInformation notInformation = new NotInformation();
+        notInformation.setImageUrl(url);
+        notInformation.setTitle(title);
+        notInformation.setMessage(message);
+		String[] tagsArray = tag.split(",");
+		if(tagsArray.length>=3){
+			notInformation.setTag1(tagsArray[0]);
+			notInformation.setTag2(tagsArray[1]);
+			notInformation.setTag3(tagsArray[2]);
+		}else if(tagsArray.length==2){
+            notInformation.setTag1(tagsArray[0]);
+            notInformation.setTag2(tagsArray[1]);
+		}else if(tagsArray.length==1){
+		    notInformation.setTag1(tagsArray[0]);
+        }
+		notInformationService.saveNotInformation(notInformation);
 
         ModelAndView mav = new ModelAndView();
         mav.setViewName("redirect:notification.do");
         return mav;
     }
-    
+
+    //上传图片
     private String uploadImage(HttpServletRequest request,FileItem fileItem) throws Exception{
     	String uploadPath = getServletContext().getRealPath("/upload");
     	File uploadDir = new File(uploadPath);
@@ -124,8 +146,10 @@ public class NotificationController extends MultiActionController {
     		os.close();
     		is.close();
 //    		String serverName = request.getServerName();
-//    		String serverName = "192.168.1.103";
-			String serverName = "172.25.69.146";
+    		String serverName = "192.168.1.106";
+//			String serverName = "172.25.69.146";
+//			String serverName = "192.168.137.206";
+//			String serverName = "192.168.43.120";
     		int serverPort = request.getServerPort();
     		String url = "http://"+serverName+":"+serverPort+"/upload/"+fileName;
     		System.out.println("*******************");
@@ -135,5 +159,8 @@ public class NotificationController extends MultiActionController {
     	}
     	return "";
     }
+
+
+
 
 }
