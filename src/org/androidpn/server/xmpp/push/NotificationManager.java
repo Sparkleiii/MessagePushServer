@@ -47,7 +47,6 @@ public class NotificationManager {
 
     /**
      * 广播 消息推送所有用户
-     * 
      * 在线直接推送
      * 推送消息存储在数据库中
      */
@@ -114,6 +113,7 @@ public class NotificationManager {
         List<String> utlist = null;
         Set<String> usernameSet = null;
         for(String tags:tagsArray){
+            System.out.println(tags);
             utlist= userTagsService.findByTag(tags);
             usernameSet = new HashSet<String>();
             for(String account:utlist){
@@ -123,6 +123,7 @@ public class NotificationManager {
         }
     	if(utlist!=null && !utlist.isEmpty()){
     		for(String username:usernameSet){
+    		    System.out.println(username);
     			sendNotifcationToUser(apiKey, username, title, message, uri,imageurl, shouldSave);
     		}
     	}

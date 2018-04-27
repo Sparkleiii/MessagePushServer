@@ -3,18 +3,12 @@ package org.androidpn.server.console.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import com.google.gson.Gson;
-import net.sf.json.JSONArray;
 import org.androidpn.server.model.Login;
 import org.androidpn.server.model.NotInformation;
 import org.androidpn.server.model.User;

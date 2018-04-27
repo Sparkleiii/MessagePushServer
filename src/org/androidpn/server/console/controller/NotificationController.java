@@ -147,7 +147,7 @@ public class NotificationController extends MultiActionController {
     		is.close();
 //    		String serverName = request.getServerName();
     		String serverName = "192.168.1.106";
-//			String serverName = "172.25.69.146";
+//			String serverName = "172.25.71.115";
 //			String serverName = "192.168.137.206";
 //			String serverName = "192.168.43.120";
     		int serverPort = request.getServerPort();

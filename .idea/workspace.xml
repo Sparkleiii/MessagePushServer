@@ -7,56 +7,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4d06d07-91b5-42dd-9199-514398109dda" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/lib/gson-2.8.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/lib/json-lib-2.4-jdk15.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/androidpn/server/dao/NotInformationDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/androidpn/server/dao/hibernate/NotInformationDaoHibernate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/androidpn/server/model/NotInformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/androidpn/server/service/NotInformationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/androidpn/server/service/impl/NotInformationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/manager/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/androidpn/server/console/controller/ManagerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/androidpn/server/dao/ManagerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/androidpn/server/dao/hibernate/ManagerDaoHibernate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/androidpn/server/model/Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/androidpn/server/service/ManagerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/androidpn/server/service/impl/ManagerServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/40c16e8e-b2c4-49b2-91cc-692f1edbd217.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/40c16e8e-b2c4-49b2-91cc-692f1edbd217.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/4e01d2f6-698d-458c-be8d-c62ba6ad1cca.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4e01d2f6-698d-458c-be8d-c62ba6ad1cca.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/554b2576-52b7-4ff7-b43c-22845077e2ed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/554b2576-52b7-4ff7-b43c-22845077e2ed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/notification/form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/notification/form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/DemoAndroidpn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/DemoAndroidpn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/console/controller/NotificationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/console/controller/NotificationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/console/controller/SessionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/console/controller/SessionController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/console/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/console/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/dao/UserTagsDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/dao/UserTagsDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/dao/hibernate/UserTagsDaoHibernate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/dao/hibernate/UserTagsDaoHibernate.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/service/ServiceLocator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/service/ServiceLocator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/service/UserTagsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/service/UserTagsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/service/impl/UserTagsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/service/impl/UserTagsServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/handler/IQSetTagsHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/handler/IQSetTagsHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/push/NotificationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/org/androidpn/server/xmpp/push/NotificationManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/spring-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/classes/spring-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/pages/notification/form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/pages/notification/form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MessagePushServer/DemoAndroidpn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MessagePushServer_war_exploded/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MessagePushServer/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MessagePushServer/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/console/controller/NotificationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/console/controller/NotificationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/console/controller/SessionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/console/controller/SessionController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/console/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/console/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/dao/UserTagsDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/dao/UserTagsDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/dao/hibernate/UserTagsDaoHibernate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/dao/hibernate/UserTagsDaoHibernate.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/service/ServiceLocator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/service/ServiceLocator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/service/UserTagsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/service/UserTagsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/service/impl/UserTagsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/service/impl/UserTagsServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/xmpp/handler/IQSetTagsHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/xmpp/handler/IQSetTagsHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/xmpp/push/NotificationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MessagePushServer/org/androidpn/server/xmpp/push/NotificationManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MessagePushServer/spring-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MessagePushServer/spring-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/spring-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/spring-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DemoAndroidpn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PushTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/console/controller/NotificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/androidpn/server/console/controller/NotificationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/console/controller/SessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/androidpn/server/console/controller/SessionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/console/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/androidpn/server/console/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/androidpn/server/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/dao/UserTagsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/androidpn/server/dao/UserTagsDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/dao/hibernate/UserTagsDaoHibernate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/androidpn/server/dao/hibernate/UserTagsDaoHibernate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/service/ServiceLocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/androidpn/server/service/ServiceLocator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/service/UserTagsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/androidpn/server/service/UserTagsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/service/impl/UserTagsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/androidpn/server/service/impl/UserTagsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQSetTagsHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/handler/IQSetTagsHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/push/NotificationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/androidpn/server/xmpp/push/NotificationManager.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -99,23 +81,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NotificationController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/console/controller/NotificationController.java">
+      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="108" column="43" selection-start-line="108" selection-start-column="43" selection-end-line="108" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="206">
+              <caret line="83" column="5" lean-forward="true" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NotificationManager.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/push/NotificationManager.java">
+      <file leaf-file-name="UserDaoHibernate.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/dao/hibernate/UserDaoHibernate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="135" column="40" lean-forward="true" selection-start-line="135" selection-start-column="40" selection-end-line="135" selection-end-column="40" />
+            <state relative-caret-position="779">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="apn_user" pinned="false" current-in-tab="false">
+        <entry file="das://40c16e8e-b2c4-49b2-91cc-692f1edbd217/schema/test/table/apn_user">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manager" pinned="false" current-in-tab="false">
+        <entry file="das://40c16e8e-b2c4-49b2-91cc-692f1edbd217/schema/test/table/manager">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -131,6 +128,33 @@
       </file>
       <file leaf-file-name="notification" pinned="false" current-in-tab="false">
         <entry file="das://40c16e8e-b2c4-49b2-91cc-692f1edbd217/schema/test/table/notification">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tags" pinned="false" current-in-tab="false">
+        <entry file="das://40c16e8e-b2c4-49b2-91cc-692f1edbd217/schema/test/table/tags">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login" pinned="false" current-in-tab="false">
+        <entry file="das://40c16e8e-b2c4-49b2-91cc-692f1edbd217/schema/test/table/login">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user_tags" pinned="false" current-in-tab="false">
+        <entry file="das://4e01d2f6-698d-458c-be8d-c62ba6ad1cca/schema/test/table/user_tags">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -161,7 +185,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/org/androidpn/server/console/api/NotificationApiController.java" />
-        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/WebRoot/index.jsp" />
         <option value="$PROJECT_DIR$/WebRoot/includes/footer.jsp" />
         <option value="$PROJECT_DIR$/WebRoot/includes/header.jsp" />
@@ -185,15 +208,26 @@
         <option value="$PROJECT_DIR$/src/PushTest.java" />
         <option value="$PROJECT_DIR$/src/org/androidpn/server/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/org/androidpn/server/dao/TagsDao.java" />
-        <option value="$PROJECT_DIR$/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/resources/spring-config.xml" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/service/ServiceLocator.java" />
         <option value="$PROJECT_DIR$/src/org/androidpn/server/model/NotInformation.java" />
-        <option value="$PROJECT_DIR$/src/org/androidpn/server/console/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/org/androidpn/server/dao/NotInformationDao.java" />
         <option value="$PROJECT_DIR$/src/org/androidpn/server/dao/hibernate/NotInformationDaoHibernate.java" />
         <option value="$PROJECT_DIR$/src/org/androidpn/server/service/NotInformationService.java" />
         <option value="$PROJECT_DIR$/src/org/androidpn/server/service/impl/NotInformationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/server/model/Manager.java" />
+        <option value="$PROJECT_DIR$/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/server/dao/hibernate/ManagerDaoHibernate.java" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/server/dao/ManagerDao.java" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/server/console/controller/SessionController.java" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/server/service/ManagerService.java" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/server/service/impl/ManagerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/resources/spring-config.xml" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/server/console/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/server/service/ServiceLocator.java" />
+        <option value="$PROJECT_DIR$/src/org/androidpn/server/console/controller/ManagerController.java" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/WebRoot/login.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/decorators.xml" />
         <option value="$PROJECT_DIR$/src/org/androidpn/server/console/controller/NotificationController.java" />
         <option value="$PROJECT_DIR$/src/org/androidpn/server/xmpp/push/NotificationManager.java" />
       </list>
@@ -216,8 +250,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="481" />
-    <option name="y" value="17" />
+    <option name="x" value="480" />
+    <option name="y" value="15" />
     <option name="width" value="980" />
     <option name="height" value="1085" />
   </component>
@@ -227,8 +261,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -236,129 +270,11 @@
               <item name="MessagePushServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="MessagePushServer" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="MessagePushServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MessagePushServer" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MessagePushServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MessagePushServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MessagePushServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MessagePushServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MessagePushServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MessagePushServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MessagePushServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MessagePushServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="console" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MessagePushServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MessagePushServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="console" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MessagePushServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MessagePushServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="console" type="462c0819:PsiDirectoryNode" />
-              <item name="vo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MessagePushServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MessagePushServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MessagePushServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MessagePushServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MessagePushServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MessagePushServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MessagePushServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MessagePushServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MessagePushServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MessagePushServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="xmpp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MessagePushServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MessagePushServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="xmpp" type="462c0819:PsiDirectoryNode" />
-              <item name="handler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MessagePushServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MessagePushServer" type="462c0819:PsiDirectoryNode" />
-              <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MessagePushServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MessagePushServer" type="462c0819:PsiDirectoryNode" />
-              <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MessagePushServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MessagePushServer" type="462c0819:PsiDirectoryNode" />
-              <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -366,7 +282,7 @@
     <property name="android.sdk.path" value="$PROJECT_DIR$/../../IntelliJIDEA/AndroidSDK" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/WebRoot/WEB-INF/lib/gson-2.8.2.jar!/" />
+    <property name="last_opened_file_path" value="E:/Diplomo/DiplomaDesign/SHMS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -378,11 +294,14 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.androidpn.server.service.impl" />
       <recent name="org.androidpn.server.service" />
+      <recent name="org.androidpn.server.dao.hibernate" />
       <recent name="org.androidpn.server.dao" />
       <recent name="org.androidpn.server.model" />
-      <recent name="org.androidpn.server.dao.hibernate" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Programming\java\IDEASpace\MessagePushServer\WebRoot" />
+      <recent name="D:\Programming\java\IDEASpace\MessagePushServer\WebRoot\WEB-INF" />
+      <recent name="D:\Programming\java\IDEASpace\MessagePushServer\WebRoot\WEB-INF\pages\manager" />
       <recent name="D:\Programming\java\IDEASpace\MessagePushServer\WebRoot\WEB-INF\lib" />
     </key>
   </component>
@@ -546,6 +465,16 @@
       <workItem from="1524444542284" duration="11709000" />
       <workItem from="1524462410382" duration="5125000" />
       <workItem from="1524470859046" duration="6681000" />
+      <workItem from="1524533706961" duration="10748000" />
+      <workItem from="1524629315991" duration="1409000" />
+      <workItem from="1524642244321" duration="9201000" />
+      <workItem from="1524655150891" duration="664000" />
+      <workItem from="1524704372718" duration="1241000" />
+      <workItem from="1524706518593" duration="933000" />
+      <workItem from="1524709890100" duration="1052000" />
+      <workItem from="1524713813037" duration="3665000" />
+      <workItem from="1524751523533" duration="2191000" />
+      <workItem from="1524808537231" duration="1385000" />
     </task>
     <task id="LOCAL-00001" summary="界面修改&#10;添加IQTagAlias&#10;数据库修改添加表tag user_tag">
       <created>1524290542034</created>
@@ -558,7 +487,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95622000" />
+    <option name="totallyTimeSpent" value="128111000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -573,77 +502,41 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5033512" side_tool="true" weight="0.53323907" />
+      <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.5033512" side_tool="true" weight="0.53323907" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3281471" />
       <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="9" />
+      <window_info id="Designer" order="3" />
       <window_info anchor="right" id="Database" order="1" visible="true" weight="0.13873994" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
+      <window_info id="UI Designer" order="5" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32956153" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32956153" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32956153" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.13719943" />
+      <window_info id="Image Layers" order="4" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.13719943" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32956153" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4966488" weight="0.28854313" />
-      <window_info anchor="bottom" id="Spring" order="7" weight="0.32956153" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32956153" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4966488" visible="true" weight="0.28854313" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32956153" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.32956153" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32956153" />
       <window_info id="Persistence" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" order="8" weight="0.32956153" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25603217" />
-      <window_info id="Web" order="2" side_tool="true" />
-      <window_info id="Learn" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29289544" />
+      <window_info id="Web" order="8" side_tool="true" />
+      <window_info id="Learn" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="14" visible="true" weight="0.32956153" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Persistence" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.328877" />
-      <window_info id="Designer" order="3" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info id="Image Layers" order="4" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" weight="0.2857143" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5013405" side_tool="true" weight="0.2857143" />
-      <window_info anchor="bottom" id="Messages" order="11" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2774799" />
-      <window_info id="Learn" order="8" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Web" order="9" side_tool="true" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -657,255 +550,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="8" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/PushTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="44" lean-forward="true" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/model/UserTags.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/dao/NotificationDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/dao/TagsDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/dao/UserTagsDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="43" column="4" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/dao/hibernate/TagsDaoHibernate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="35" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="57" column="61" selection-start-line="57" selection-start-column="61" selection-end-line="57" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/dao/hibernate/LoginDaoHibernate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/service/impl/LoginServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/service/UserTagsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/spring-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="162" lean-forward="true" selection-start-line="162" selection-end-line="162" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4e01d2f6-698d-458c-be8d-c62ba6ad1cca/schema/test/table/not_information">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/model/Tags.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4e01d2f6-698d-458c-be8d-c62ba6ad1cca/schema/test/table/not_information">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4e01d2f6-698d-458c-be8d-c62ba6ad1cca/schema/test/table/not_information">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4e01d2f6-698d-458c-be8d-c62ba6ad1cca/schema/test/table/not_information">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4e01d2f6-698d-458c-be8d-c62ba6ad1cca/schema/test/table/not_information">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4e01d2f6-698d-458c-be8d-c62ba6ad1cca/schema/test/table/not_information">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4e01d2f6-698d-458c-be8d-c62ba6ad1cca/schema/test/table/not_information">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4e01d2f6-698d-458c-be8d-c62ba6ad1cca/schema/test/table/not_information">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4e01d2f6-698d-458c-be8d-c62ba6ad1cca/schema/test/table/not_information">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4e01d2f6-698d-458c-be8d-c62ba6ad1cca/schema/test/table/not_information">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4e01d2f6-698d-458c-be8d-c62ba6ad1cca/schema/test/table/not_information">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4e01d2f6-698d-458c-be8d-c62ba6ad1cca/schema/test/table/not_information">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4e01d2f6-698d-458c-be8d-c62ba6ad1cca/schema/test/table/not_information">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/model/Notification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4e01d2f6-698d-458c-be8d-c62ba6ad1cca/schema/test/table/not_information">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4e01d2f6-698d-458c-be8d-c62ba6ad1cca/schema/test/table/not_information">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4e01d2f6-698d-458c-be8d-c62ba6ad1cca/schema/test/table/not_information">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4e01d2f6-698d-458c-be8d-c62ba6ad1cca/schema/test/table/not_information">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/model/NotInformation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#829#830#0" expanded="true" />
-            <element signature="e#847#848#0" expanded="true" />
-            <element signature="e#884#885#0" expanded="true" />
-            <element signature="e#907#908#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/service/NotificationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/dao/hibernate/NotificationDaoHibernate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -913,41 +561,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/service/ServiceLocator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="46" column="52" lean-forward="true" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/console/controller/SessionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/console/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="35" column="8" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/dao/NotInformationDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="15" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -962,16 +579,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
-          <folding>
-            <element signature="e#883#884#0" expanded="true" />
-            <element signature="e#924#925#0" expanded="true" />
-            <element signature="e#991#992#0" expanded="true" />
-            <element signature="e#1039#1040#0" expanded="true" />
-            <element signature="e#1115#1116#0" expanded="true" />
-            <element signature="e#1173#1174#0" expanded="true" />
-            <element signature="e#1250#1251#0" expanded="true" />
-            <element signature="e#1295#1296#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -979,11 +586,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#879#880#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -991,27 +593,253 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://40c16e8e-b2c4-49b2-91cc-692f1edbd217/schema/test/table/user_tags">
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/model/Manager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/user/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="55" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/dao/ManagerDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/service/impl/ManagerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1102">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/service/ManagerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/dao/hibernate/ManagerDaoHibernate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1102">
+          <caret line="58" column="49" lean-forward="true" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/service/ServiceLocator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/classes/spring-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1026" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/pages/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/pages/manager/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/pages/user/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-228" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/console/controller/SessionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/assets/js/libs/less-1.7.0.js" />
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/console/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/console/controller/ManagerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/pages/notification/form.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/notification/form.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/includes/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="42" lean-forward="true" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/decorators/default.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-133">
+          <caret line="8" column="63" lean-forward="true" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/login.jsp" />
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/decorators.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="63" column="46" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/session/Session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="227" column="16" selection-start-line="227" selection-start-column="16" selection-end-line="227" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/spring-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="98" column="47" selection-start-line="98" selection-start-column="47" selection-end-line="98" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4e01d2f6-698d-458c-be8d-c62ba6ad1cca/schema/test/table/notification">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="das://40c16e8e-b2c4-49b2-91cc-692f1edbd217/schema/test/table/login">
+    <entry file="das://4e01d2f6-698d-458c-be8d-c62ba6ad1cca/schema/test/table/tags">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="das://40c16e8e-b2c4-49b2-91cc-692f1edbd217/schema/test/table/apn_user">
+    <entry file="das://4e01d2f6-698d-458c-be8d-c62ba6ad1cca/schema/test/table/user_tags">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4e01d2f6-698d-458c-be8d-c62ba6ad1cca/schema/test/table/login">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4e01d2f6-698d-458c-be8d-c62ba6ad1cca/schema/test/table/apn_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/service/UserTagsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/push/NotificationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="114" column="35" lean-forward="true" selection-start-line="114" selection-start-column="35" selection-end-line="114" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/console/controller/NotificationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="103" column="48" lean-forward="true" selection-start-line="103" selection-start-column="48" selection-end-line="103" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4e01d2f6-698d-458c-be8d-c62ba6ad1cca/schema/test/table/not_information">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/dao/hibernate/UserDaoHibernate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://40c16e8e-b2c4-49b2-91cc-692f1edbd217/schema/test/table/manager">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -1032,20 +860,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/console/controller/NotificationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="108" column="43" selection-start-line="108" selection-start-column="43" selection-end-line="108" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="das://40c16e8e-b2c4-49b2-91cc-692f1edbd217/schema/test/table/tags">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/xmpp/push/NotificationManager.java">
+    <entry file="das://40c16e8e-b2c4-49b2-91cc-692f1edbd217/schema/test/table/apn_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://40c16e8e-b2c4-49b2-91cc-692f1edbd217/schema/test/table/login">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://40c16e8e-b2c4-49b2-91cc-692f1edbd217/schema/test/table/user_tags">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/androidpn/server/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="135" column="40" lean-forward="true" selection-start-line="135" selection-start-column="40" selection-end-line="135" selection-end-column="40" />
+        <state relative-caret-position="206">
+          <caret line="83" column="5" lean-forward="true" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
         </state>
       </provider>
     </entry>

@@ -56,6 +56,7 @@
 	<mapping class="org.androidpn.server.model.Tags"></mapping>
 	<mapping class="org.androidpn.server.model.UserTags"></mapping>
 	<mapping class="org.androidpn.server.model.NotInformation"></mapping>
+	<mapping class="org.androidpn.server.model.Manager"></mapping>
 </session-factory>
 </hibernate-configuration>
 

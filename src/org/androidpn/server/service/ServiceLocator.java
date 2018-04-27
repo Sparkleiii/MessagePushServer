@@ -17,6 +17,8 @@ public class ServiceLocator {
 
     public static String NOTINFORMATION_SERVICE = "notInformationService";
 
+    public static String MANAGER_SERVICE = "managerService";
+
     /**
      * Generic method to obtain a service object for a given name. 
      * 
@@ -49,6 +51,10 @@ public class ServiceLocator {
 
     public static NotInformationService getNotInformationService(){
         return (NotInformationService) XmppServer.getInstance().getBean(NOTINFORMATION_SERVICE);
+    }
+
+    public static ManagerService getManagerService(){
+        return (ManagerService) XmppServer.getInstance().getBean(MANAGER_SERVICE);
     }
 
 }
