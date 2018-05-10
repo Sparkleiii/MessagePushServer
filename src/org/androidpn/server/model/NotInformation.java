@@ -3,13 +3,15 @@ package org.androidpn.server.model;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "not_information")
 public class NotInformation {
 	@Id
+	@Column(name = "not_id")
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private long id;
+	private long notId;
 	
 	@Column(name = "title", nullable = false, length = 64)
 	private String title;
@@ -34,6 +36,17 @@ public class NotInformation {
 
 	@Column(name = "time",length = 64)
 	private String time;
+
+/*	@OneToMany(fetch = FetchType.LAZY,mappedBy = "notInformation")
+	private Set<Comment> comments;*/
+
+/*	public Set<Comment> getComments() {
+		return comments;
+	}
+
+	public void setComments(Set<Comment> comments) {
+		this.comments = comments;
+	}*/
 
 	public String getTime() {
 		return time;
@@ -73,12 +86,15 @@ public class NotInformation {
 	public void setImageUrl(String imageUrl) {
 		this.imageUrl = imageUrl;
 	}
-	public long getId() {
-		return id;
+
+	public long getNotId() {
+		return notId;
 	}
-	public void setId(long id) {
-		this.id = id;
+
+	public void setNotId(long notId) {
+		this.notId = notId;
 	}
+
 	public String getTitle() {
 		return title;
 	}

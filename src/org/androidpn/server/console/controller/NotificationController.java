@@ -4,9 +4,6 @@ package org.androidpn.server.console.controller;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
-import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
-import java.net.URLDecoder;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -20,7 +17,6 @@ import org.androidpn.server.xmpp.push.NotificationManager;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
-import org.apache.mina.integration.beans.StringEditor;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.multiaction.MultiActionController;
 
@@ -146,7 +142,7 @@ public class NotificationController extends MultiActionController {
     		os.close();
     		is.close();
 //    		String serverName = request.getServerName();
-    		String serverName = "192.168.1.106";
+    		String serverName = "192.168.1.109";
 //			String serverName = "172.25.71.115";
 //			String serverName = "192.168.137.206";
 //			String serverName = "192.168.43.120";
@@ -159,8 +155,4 @@ public class NotificationController extends MultiActionController {
     	}
     	return "";
     }
-
-
-
-
 }

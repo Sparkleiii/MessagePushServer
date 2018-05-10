@@ -3,8 +3,15 @@
 		<pattern>/includes/*</pattern>
 		<pattern>/40*.jsp</pattern>
 		<pattern>/dwr/*</pattern>
+		<pattern>/login.jsp</pattern>
 	</excludes>
 	<decorator name="default" page="default.jsp">
-		<pattern>/*</pattern>
+		<pattern>/index.do</pattern>
+		<pattern>/user_api.do</pattern>
+		<pattern>/notification_api.do</pattern>
+		<pattern>/user.do</pattern>
+		<pattern>/session.do</pattern>
+		<pattern>/notification.do</pattern>
+		<pattern>/manager.do</pattern>
 	</decorator>
 </decorators>

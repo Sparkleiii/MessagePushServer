@@ -15,6 +15,7 @@ import org.androidpn.server.model.User;
 import org.androidpn.server.service.*;
 import org.androidpn.server.xmpp.presence.PresenceManager;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.multiaction.MultiActionController;
 

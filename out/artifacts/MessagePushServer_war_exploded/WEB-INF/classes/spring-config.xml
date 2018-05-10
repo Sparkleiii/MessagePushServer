@@ -78,6 +78,9 @@
 	<bean id="managerDao" class="org.androidpn.server.dao.hibernate.ManagerDaoHibernate">
 		<property name="sessionFactory" ref="sessionFactory"></property>
 	</bean>
+	<bean id="commentDao" class="org.androidpn.server.dao.hibernate.CommentDaoHibernate">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
 
 	<!-- =============================================================== -->
 	<!-- Services                                                        -->
@@ -103,6 +106,9 @@
 	</bean>
 	<bean id="managerService" class="org.androidpn.server.service.impl.ManagerServiceImpl">
 		<property name="managerDao" ref="managerDao" />
+	</bean>
+	<bean id="commentService" class="org.androidpn.server.service.impl.CommentServiceImpl">
+		<property name="commentDao" ref="commentDao" />
 	</bean>
 
 	<!-- =============================================================== -->
