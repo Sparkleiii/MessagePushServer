@@ -81,6 +81,9 @@
 	<bean id="commentDao" class="org.androidpn.server.dao.hibernate.CommentDaoHibernate">
 		<property name="sessionFactory" ref="sessionFactory"></property>
 	</bean>
+	<bean id="supportDao" class="org.androidpn.server.dao.hibernate.SupportDaoHibernate">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
 
 	<!-- =============================================================== -->
 	<!-- Services                                                        -->
@@ -109,6 +112,9 @@
 	</bean>
 	<bean id="commentService" class="org.androidpn.server.service.impl.CommentServiceImpl">
 		<property name="commentDao" ref="commentDao" />
+	</bean>
+	<bean id="supportService" class="org.androidpn.server.service.impl.SupportServiceImpl">
+		<property name="supportDao" ref="supportDao" />
 	</bean>
 
 	<!-- =============================================================== -->

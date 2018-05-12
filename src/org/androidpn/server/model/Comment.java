@@ -10,13 +10,13 @@ public class Comment {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long commentId;
 
-	@Column(name = "not_id",insertable = false,updatable = false)
+	@Column(name = "not_id",updatable = false)
 	private  long notId;
 
 	@Column(name="content",nullable = false)
 	private String content;
 
-	@Column(name = "account",insertable = false)
+	@Column(name = "account")
 	private String account;
 
 	@Column(name = "time",length = 16)
@@ -30,23 +30,6 @@ public class Comment {
 		this.commentId = commentId;
 	}
 
-	public String getContent() {
-		return content;
-	}
-
-	public void setContent(String content) {
-		this.content = content;
-	}
-
-
-	public String getTime() {
-		return time;
-	}
-
-	public void setTime(String time) {
-		this.time = time;
-	}
-
 	public long getNotId() {
 		return notId;
 	}
@@ -55,11 +38,27 @@ public class Comment {
 		this.notId = notId;
 	}
 
+	public String getContent() {
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
+	}
+
 	public String getAccount() {
 		return account;
 	}
 
 	public void setAccount(String account) {
 		this.account = account;
+	}
+
+	public String getTime() {
+		return time;
+	}
+
+	public void setTime(String time) {
+		this.time = time;
 	}
 }

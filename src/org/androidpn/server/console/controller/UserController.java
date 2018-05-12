@@ -14,6 +14,7 @@ import org.androidpn.server.model.NotInformation;
 import org.androidpn.server.model.User;
 import org.androidpn.server.service.*;
 import org.androidpn.server.xmpp.presence.PresenceManager;
+import org.mortbay.log.Log;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
@@ -60,9 +61,10 @@ public class UserController extends MultiActionController {
         //若该用户名已存在
         if(!loginService.exists(account)){
             Login exist = loginService.getUserByClientId(clientId);
+            Log.debug("exist",exist);
             if(exist!=null){
-                exist.setUsername("");
-                loginService.updateUser(exist);
+                loginService.deleteUser(exist);
+                loginService.saveUser(exist);
             }
             Login login = new Login();
             login.setUsername(clientId);
@@ -92,10 +94,11 @@ public class UserController extends MultiActionController {
     			jsonData = "success";
     			//处理绑定的客户端
     			//若客户端编号与原login不匹配，解绑重新绑定
-    			if(!login.getUsername().equals(clientId)){
+    			if(!login.getUsername().equals(clientId)||login.getUsername()==""){
     				try {
-						userService.deleteUser(login.getUsername());
+//						userService.deleteUser(login.getUsername());
     					login.setUsername(clientId);
+    					loginService.updateUser(login);
 					} catch (Exception e) {
 						e.printStackTrace();
 						System.out.println();
@@ -104,6 +107,7 @@ public class UserController extends MultiActionController {
     		}
     	}
         sendMessage(jsonData,response);
+        Log.debug("json",jsonData);
     }
 
     public void delNotInformation(HttpServletRequest request, HttpServletResponse response) throws IOException {

@@ -15,7 +15,7 @@ public class LoginDaoHibernate extends HibernateDaoSupport implements LoginDao{
 	}
 
 	public void saveUser(Login user) {
-		getHibernateTemplate().saveOrUpdate(user);
+		getHibernateTemplate().save(user);
 		getHibernateTemplate().flush();
 	}
 
@@ -25,6 +25,7 @@ public class LoginDaoHibernate extends HibernateDaoSupport implements LoginDao{
 
 	public void updateUser(Login user) {
 		getHibernateTemplate().update(user);
+		getHibernateTemplate().flush();
 	}
 
 	public Login getUserByAccount(String account) {

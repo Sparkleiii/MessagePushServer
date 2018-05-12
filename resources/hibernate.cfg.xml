@@ -58,6 +58,7 @@
 	<mapping class="org.androidpn.server.model.NotInformation"></mapping>
 	<mapping class="org.androidpn.server.model.Manager"></mapping>
 	<mapping class="org.androidpn.server.model.Comment"></mapping>
+	<mapping class="org.androidpn.server.model.Support"></mapping>
 </session-factory>
 </hibernate-configuration>
 

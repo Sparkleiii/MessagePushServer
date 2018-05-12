@@ -21,6 +21,8 @@ public class ServiceLocator {
 
     public static String COMMENT_SERVICE = "commentService";
 
+    public static String SUPPORT_SERVICE = "supportService";
+
     /**
      * Generic method to obtain a service object for a given name. 
      * 
@@ -63,4 +65,7 @@ public class ServiceLocator {
         return (CommentService) XmppServer.getInstance().getBean(COMMENT_SERVICE);
     }
 
+    public static SupportService getSupportService(){
+        return (SupportService) XmppServer.getInstance().getBean(SUPPORT_SERVICE);
+    }
 }
